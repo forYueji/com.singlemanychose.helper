@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/search"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/main_top"
+        android:layout_marginTop="@dimen/main_top">
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_len_back_view"
+            android:layout_marginLeft="@dimen/main_top">
+
+            <EditText
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:maxLength="10"
+                android:textSize="@dimen/user_registered_size"
+                android:layout_marginLeft="@dimen/main_head"
+                android:layout_marginRight="@dimen/main_head"
+                android:textColor="@color/company_name_color"
+                android:textColorHint="@color/company_name_color"
+                android:hint="@string/search"
+                android:id="@+id/editText_Search_Content_view_show" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout_Search_Event_view_show"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/search_len_back_view"
+            android:layout_marginLeft="@dimen/main_top"
+            android:layout_marginRight="@dimen/main_top">
+
+            <TextView
+                android:id="@+id/textView_Search_Event_Response_view_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/user_registered_size"
+                android:text="全选"
+                android:textColor="@color/company_name_color"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

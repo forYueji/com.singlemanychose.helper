@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayour_item_view_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView_item_many_title_view"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox_item_many_multiselect_view_show"
+            android:background="@mipmap/checkbox_empty"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:button="@null"
+            android:duplicateParentState="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginEnd="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>
